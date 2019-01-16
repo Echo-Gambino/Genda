@@ -15,6 +15,8 @@ Milestones:
 
 6. (OPTIONAL) Implement a terminal flags for quickly performing activities like saving a note and reminding, etc.
 
+X. Create a webapplication client for a GUI front-end.
+
 7. Create a GUI client on linux for ease of use for average joes.
 
 8. Implement encryption files, that can be readily accessed by entering in credentials like a password.
