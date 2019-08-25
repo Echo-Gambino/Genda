@@ -1,13 +1,17 @@
-import os
+from flask import Flask, flash, redirect, render_template, request, session, abort
 
-if (__name__) == '__main__':
+app = Flask(__name__)
 
-    os.system("clear")
 
-    print('Welcome to Genda!')
-    print('-- press any button to continue --')
+@app.route("/")
+def index():
+    return render_template('welcomePage.html')
 
-    input('')
 
+if __name__ == "__main__":
+    app.run()
     pass
+
+
+
 
