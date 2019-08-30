@@ -41,6 +41,11 @@ body
 	margin-right: 5px;
 }
 
+a.header-item
+{
+	color: black;
+}
+
 .header-spacer
 {
 	flex-grow: 10;
@@ -86,9 +91,11 @@ body
 
 		<div class="header-spacer"></div>
 
-		<div class="header-item">
-			<img class="item-cancel dark-mode-shadow" src="static/resources/cancel.png"/>
-		</div>
+		<a class="header-item" href={{ url_for('index') }}>
+			<img 
+				class="item-cancel dark-mode-shadow" 
+				src="static/resources/cancel.png"/>
+		</a>
 
 	</div>
 
