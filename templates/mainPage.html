@@ -1,0 +1,106 @@
+<html>
+
+<style>
+
+body
+{
+	font-family: Arial;
+
+}
+
+.layout0
+{
+	width: 100%;
+	height: 100%;
+}
+
+.layout0-header
+{
+	border: 1px solid lightblue;
+}
+
+.layout0-body
+{
+	border: 1px solid orange;
+	height: 100%;
+}
+
+.header
+{
+	height: 100%;
+	text-align: left;
+
+	display: flex;
+
+	font-size: 3.25em;	
+}
+
+.header-item
+{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.header-spacer
+{
+	flex-grow: 10;
+}
+
+.item-cancel
+{
+	/* Have the images size to be relatively small but able to easily spot*/
+	height: 0.75em;
+
+	/* Align the object to the center vertically*/
+	position: relative;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.dark-mode-shadow {
+    -webkit-filter: drop-shadow(0px 0px 1px rgba(256,256,256,0.75));
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#FFF')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#FFF')";
+}
+
+.body
+{
+	height: 100%;
+}
+
+
+</style>
+
+<head>
+	<title>Genda</title>
+</head>
+
+<div>
+<table class="layout0">
+<tr><th class="layout0-header">
+
+	<div class="header">
+	
+		<span class="header-item">Genda</span>
+
+		<div class="header-spacer"></div>
+
+		<div class="header-item">
+			<img class="item-cancel dark-mode-shadow" src="static/resources/cancel.png"/>
+		</div>
+
+	</div>
+
+</th></tr>
+<tr><th class="layout0-body">
+
+	<div class="body">
+	<span>Something Else</span>
+	</div>
+
+</th></tr>
+</table>
+</div>
+
+</html>
