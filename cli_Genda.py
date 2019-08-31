@@ -10,7 +10,14 @@ def index():
 
 @app.route("/user")
 def main():
-    return render_template('mainPage.html')
+
+    items = [
+            'hello',
+            'there',
+            'man'
+            ]
+
+    return render_template('mainPage.html', **locals())
 
 if __name__ == "__main__":
     app.run()

@@ -72,6 +72,9 @@ a.header-item
 .body
 {
 	height: 100%;
+
+	margin-right: 10%;
+	margin-left: 10%;
 }
 
 
@@ -83,6 +86,7 @@ a.header-item
 
 <div>
 <table class="layout0">
+<tbody>
 <tr><th class="layout0-header">
 
 	<div class="header">
@@ -92,9 +96,7 @@ a.header-item
 		<div class="header-spacer"></div>
 
 		<a class="header-item" href={{ url_for('index') }}>
-			<img 
-				class="item-cancel dark-mode-shadow" 
-				src="static/resources/cancel.png"/>
+			<img class="item-cancel dark-mode-shadow" src="static/resources/cancel.png"/>
 		</a>
 
 	</div>
@@ -102,11 +104,17 @@ a.header-item
 </th></tr>
 <tr><th class="layout0-body">
 
-	<div class="body">
-	<span>Something Else</span>
+		
+	<div class="body" style="border: 1px solid red">
+
+	  	{% extends "cmpntFeed.html" %}
+		{% block body %}
+		{% endblock %}
+
 	</div>
 
 </th></tr>
+</tbody>
 </table>
 </div>
 
